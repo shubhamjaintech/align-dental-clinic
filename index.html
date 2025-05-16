@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Dental Clinic | Pitampura, Delhi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(59, 130, 246, 0.8), rgba(37, 99, 235, 0.9));
+        }
+        .appointment-form {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .testimonial-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header -->
+    <header class="sticky-header">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-blue-600 font-bold text-2xl">
+                    <span class="flex items-center">
+                        <i class="fas fa-tooth mr-2"></i>
+                        <span>Align Dental Clinic</span>
+                    </span>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-blue-600 font-medium">Home</a>
+                <a href="#services" class="text-gray-800 hover:text-blue-600 font-medium">Services</a>
+                <a href="#about" class="text-gray-800 hover:text-blue-600 font-medium">About Us</a>
+                <a href="#testimonials" class="text-gray-800 hover:text-blue-600 font-medium">Patient Stories</a>
+                <a href="#faq" class="text-gray-800 hover:text-blue-600 font-medium">FAQs</a>
+                <a href="#contact" class="text-gray-800 hover:text-blue-600 font-medium">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <a href="#appointment" class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition duration-300">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Your Perfect Smile Begins at Align Dental Clinic</h1>
+                <p class="text-lg md:text-xl mb-8">Experience compassionate, state-of-the-art dental care in Pitampura with Dr. Anjali and our expert team.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#appointment" class="bg-white text-blue-600 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition duration-300 text-center">Book Your Visit</a>
+                    <a href="#services" class="border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-blue-600 transition duration-300 text-center">Our Services</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 md:pl-10">
+                <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Dental treatment at Align Dental Clinic" class="rounded-lg shadow-xl mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="bg-blue-100 py-6">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i class="fas fa-phone-alt text-blue-600 text-xl mr-3"></i>
+                <div>
+                    <p class="text-gray-700">Have questions? Call us today</p>
+                    <p class="text-blue-600 font-bold text-xl">+91 78990 97709</p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <i class="fas fa-map-marker-alt text-blue-600 text-xl mr-3"></i>
+                <div>
+                    <p class="text-gray-700">Visit our clinic</p>
+                    <p class="font-medium">Align Dental Clinic, Pitampura, Delhi 110034</p>
+                </div>
+            </div>
+            <a href="#appointment" class="mt-4 md:mt-0 bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition duration-300 text-center">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Why Patients Choose Align Dental Clinic</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Our practice is built on a foundation of patient comfort, modern technology, and exceptional care.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Care</h3>
+                    <p class="text-gray-600">Led by Dr. Anjali, our team of dental professionals brings years of experience and continuous education to deliver the highest quality care.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Modern Technology</h3>
+                    <p class="text-gray-600">Our clinic is equipped with the latest dental technology for precise diagnoses, effective treatments, and comfortable patient experiences.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Patient-Centered Approach</h3>
+                    <p class="text-gray-600">We take time to listen to your concerns, answer your questions, and create personalized treatment plans that suit your needs.</p>
+                </div>
+            </div>
+            <div class="mt-12 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&h=400&q=80" alt="Modern dental clinic interior" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Our Comprehensive Dental Services</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">From routine check-ups to advanced procedures, we provide quality care for patients of all ages.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-teeth text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">General Dentistry</h3>
+                    <p class="text-gray-600 mb-4">Regular check-ups, cleanings, fillings, and preventive care to maintain your oral health.</p>
+                    <a href="#appointment" class="text-blue-600 font-medium hover:text-blue-800">Learn more →</a>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tooth text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Cosmetic Dentistry</h3>
+                    <p class="text-gray-600 mb-4">Teeth whitening, veneers, and smile makeovers to enhance your smile's appearance.</p>
+                    <a href="#appointment" class="text-blue-600 font-medium hover:text-blue-800">Learn more →</a>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-teeth-open text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Orthodontics</h3>
+                    <p class="text-gray-600 mb-4">Braces, clear aligners, and other treatments to straighten teeth and correct bite issues.</p>
+                    <a href="#appointment" class="text-blue-600 font-medium hover:text-blue-800">Learn more →</a>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-crown text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Restorative Dentistry</h3>
+                    <p class="text-gray-600 mb-4">Crowns, bridges, and implants to restore damaged or missing teeth.</p>
+                    <a href="#appointment" class="text-blue-600 font-medium hover:text-blue-800">Learn more →</a>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-child text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Pediatric Dentistry</h3>
+                    <p class="text-gray-600 mb-4">Child-friendly dental care in a comfortable environment for our youngest patients.</p>
+                    <a href="#appointment" class="text-blue-600 font-medium hover:text-blue-800">Learn more →</a>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-procedures text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Emergency Care</h3>
+                    <p class="text-gray-600 mb-4">Prompt attention for dental emergencies such as toothaches, injuries, or broken restorations.</p>
+                    <a href="#appointment" class="text-blue-600 font-medium hover:text-blue-800">Learn more →</a>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&h=400&q=80" alt="Modern dental equipment" class="rounded-lg shadow-lg mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Dr. Anjali -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0">
+                    <img src="./anjali.png" alt="Dr. Anjali" class="rounded-lg shadow-lg mx-auto">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-4">Meet Dr. Anjali</h2>
+                    <p class="text-gray-600 mb-6">With over 10 years of experience in dentistry, Dr. Anjali founded Align Dental Clinic with a vision to provide exceptional dental care in a comfortable, modern environment. She received her dental degree from a prestigious institution and has continuously updated her skills through advanced training.</p>
+                    <p class="text-gray-600 mb-6">Dr. Anjali specializes in cosmetic and restorative dentistry, with a particular interest in helping patients achieve their dream smiles. Her gentle approach and commitment to patient education make dental visits a positive experience.</p>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="bg-blue-100 px-4 py-2 rounded-full">
+                            <span class="text-blue-800 font-medium">BDS, MDS</span>
+                        </div>
+                        <div class="bg-blue-100 px-4 py-2 rounded-full">
+                            <span class="text-blue-800 font-medium">Cosmetic Dentistry</span>
+                        </div>
+                        <div class="bg-blue-100 px-4 py-2 rounded-full">
+                            <span class="text-blue-800 font-medium">Orthodontics</span>
+                        </div>
+                        <div class="bg-blue-100 px-4 py-2 rounded-full">
+                            <span class="text-blue-800 font-medium">10+ Years Experience</span>
+                        </div>
+                    </div>
+                    <a href="#appointment" class="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition duration-300 inline-block">Book an Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">What Our Patients Say</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Real experiences from our patients who trust Align Dental Clinic for their dental care.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Dr. Anjali is an amazing dentist who truly cares about her patients. She explained everything clearly and made me feel comfortable throughout my treatment. The clinic is modern and spotlessly clean."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">RK</span>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Rahul Kumar</h4>
+                            <p class="text-gray-500 text-sm">Patient since 2022</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I was terrified of dental visits until I found Align Dental Clinic. The staff is incredibly friendly, and Dr. Anjali's gentle approach changed my perspective. My teeth have never looked better!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">PS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Priya Sharma</h4>
+                            <p class="text-gray-500 text-sm">Patient since 2023</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600">4.5</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I brought my 5-year-old son for his first dental visit, and I'm so glad we chose Align Dental Clinic. The team was patient and made him feel at ease. He's actually looking forward to his next check-up!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">AM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Amit Malhotra</h4>
+                            <p class="text-gray-500 text-sm">Patient since 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1581591524425-c7e0978865fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=850&h=400&q=80" alt="Happy patient at dental clinic" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section id="appointment" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold mb-4">Book Your Appointment</h2>
+                    <p class="text-gray-600 mb-6">Schedule your visit with us. We'll get back to you within 24 hours to confirm your appointment.</p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h3 class="font-bold text-xl mb-3">Clinic Hours</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Monday - Friday</span>
+                                <span class="font-medium">9:00 AM - 7:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Saturday</span>
+                                <span class="font-medium">9:00 AM - 5:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Sunday</span>
+                                <span class="font-medium">Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-bold text-xl mb-3">Contact Information</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium">Align Dental Clinic</p>
+                                    <p class="text-gray-600">Shop No. 12 , DDA Market, Rajdhani Enclave, Pitampura</p>
+                                    <!-- <p class="text-gray-600">Delhi 110034, India</p> -->
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt text-blue-600 mr-3"></i>
+                                <p class="text-gray-600">+91 78990 97709</p>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-blue-600 mr-3"></i>
+                                <p class="text-gray-600">info@aligndentalclinic.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-gray-50 p-8 rounded-lg appointment-form">
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label for="firstName" class="block text-gray-700 mb-2">First Name</label>
+                                <input type="text" id="firstName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-gray-700 mb-2">Last Name</label>
+                                <input type="text" id="lastName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="service" class="block text-gray-700 mb-2">Service Needed</label>
+                            <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <option value="">Select a service</option>
+                                <option value="general">General Check-up</option>
+                                <option value="cleaning">Teeth Cleaning</option>
+                                <option value="whitening">Teeth Whitening</option>
+                                <option value="orthodontics">Orthodontic Consultation</option>
+                                <option value="cosmetic">Cosmetic Dentistry</option>
+                                <option value="emergency">Emergency Care</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label for="date" class="block text-gray-700 mb-2">Preferred Date</label>
+                                <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="time" class="block text-gray-700 mb-2">Preferred Time</label>
+                                <select id="time" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                    <option value="">Select a time</option>
+                                    <option value="morning">Morning (9AM - 12PM)</option>
+                                    <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                                    <option value="evening">Evening (4PM - 7PM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Additional Information</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300">Schedule Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Find answers to common questions about our services and dental care.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-3">How often should I visit the dentist?</h3>
+                        <p class="text-gray-600">Most patients should visit the dentist every six months for a check-up and cleaning. However, Dr. Anjali may recommend more frequent visits based on your specific oral health needs.</p>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-3">Do you accept insurance?</h3>
+                        <p class="text-gray-600">Yes, we accept most major dental insurance plans. Please contact our office with your insurance information before your appointment so we can verify your coverage.</p>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-3">What payment methods do you accept?</h3>
+                        <p class="text-gray-600">We accept cash, credit cards, debit cards, and UPI payments. We also offer flexible payment plans for more extensive treatments.</p>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-3">How can I manage dental anxiety?</h3>
+                        <p class="text-gray-600">At Align Dental Clinic, we understand dental anxiety is common. Dr. Anjali specializes in treating anxious patients with a gentle approach. We offer comfort amenities, clear communication, and sedation options when necessary.</p>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-3">What should I do in a dental emergency?</h3>
+                        <p class="text-gray-600">Contact our office immediately at +91 78990 97709. We reserve time in our schedule for emergency appointments. For after-hours emergencies, our answering service will direct you to emergency care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-4">Find Us</h2>
+                    <p class="text-gray-600 mb-6">We're conveniently located in Pitampura, Delhi. Easy access via public transportation and parking available nearby.</p>
+                    
+                    <!-- Map image placeholder -->
+                    <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69c07a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Map to Align Dental Clinic" class="rounded-lg shadow-lg">
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                    <p class="text-gray-600 mb-6">Have questions or need more information? Send us a message, and we'll get back to you as soon as possible.</p>
+                    
+                    <form>
+                        <div class="mb-4">
+                            <label for="contactName" class="block text-gray-700 mb-2">Your Name</label>
+                            <input type="text" id="contactName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="contactEmail" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="contactEmail" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="contactSubject" class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="contactSubject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="contactMessage" class="block text-gray-700 mb-2">Your Message</label>
+                            <textarea id="contactMessage" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Align Dental Clinic</h3>
+                    <p class="text-gray-300 mb-4">Your trusted partner for comprehensive dental care in Pitampura, Delhi.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition duration-300">About Dr. Anjali</a></li>
+                        <li><a href="#testimonials" class="text-gray-300 hover:text-white transition duration-300">Patient Stories</a></li>
+                        <li><a href="#faq" class="text-gray-300 hover:text-white transition duration-300">FAQs</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">General Dentistry</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">Cosmetic Dentistry</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">Orthodontics</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">Restorative Dentistry</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">Pediatric Dentistry</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">Emergency Care</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Shop No. 12 , DDA Market, Rajdhani Enclave, Pitampura</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-blue-400 mr-3"></i>
+                            <span class="text-gray-300">+91 78990 97709</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                            <span class="text-gray-300">info@aligndentalclinic.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-blue-400 mr-3"></i>
+                            <span class="text-gray-300">Mon-Fri: 9am-7pm, Sat: 9am-5pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2025 Align Dental Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <div class="fixed inset-0 bg-gray-900 bg-opacity-90 z-50 hidden" id="mobileMenu">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-end p-4">
+                <button class="text-white focus:outline-none" id="closeMenu">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center flex-grow space-y-8 text-xl">
+                <a href="#home" class="text-white hover:text-blue-400">Home</a>
+                <a href="#services" class="text-white hover:text-blue-400">Services</a>
+                <a href="#about" class="text-white hover:text-blue-400">About Us</a>
+                <a href="#testimonials" class="text-white hover:text-blue-400">Patient Stories</a>
+                <a href="#faq" class="text-white hover:text-blue-400">FAQs</a>
+                <a href="#contact" class="text-white hover:text-blue-400">Contact</a>
+                <a href="#appointment" class="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition duration-300">Book Appointment</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 transition-opacity duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileLinks = document.querySelectorAll('#mobileMenu a');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+            });
+            
+            closeMenu.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+            
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+            
+            // Back to Top Button
+            const backToTopButton = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.opacity = '1';
+                } else {
+                    backToTopButton.style.opacity = '0';
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
